@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./style/about.css" />
     <link rel="stylesheet" href="./style/magura.css" />
     <link rel="stylesheet" href="./style/fiber.css" />
+    <link rel="stylesheet" href="./style/fpv.css" />
 
     <link rel="stylesheet" href="./style/spotlight.css" />
 
@@ -142,16 +143,23 @@
             <h4 class="card-title">Centrale platforme fra TechEx:</h4>
             <ul class="fiber-list">
               <li class="fiber-list-item">
-                <img src="./icon/dron.svg" alt="dron" class="list-icon" />
+                <div class="fiber-card-img">
+                  <img src="./icon/dron.svg" alt="dron" class="list-icon" />
+                </div>
                 <p class="list-text">Stalker XO-10</p>
               </li>
               <li class="fiber-list-item">
-                <img src="./icon/dron.svg" alt="dron" class="list-icon" />
+                <div class="fiber-card-img">
+                  <img src="./icon/dron.svg" alt="dron" class="list-icon" />
+                </div>
                 <p class="list-text">Stalker XO-15</p>
               </li>
             </ul>
           </div>
           <div class="content">
+            <div class="fib-description">
+              <p class="fiber-desc">fiber-optic</p>
+            </div>
             <div class="fiber-content">
               <h2 class="fiber-title">Fiber-Optic Controlled Drones</h2>
               <p class="fiber-text">
@@ -159,26 +167,23 @@
                 gør dem praktisk talt immune over for jamming eller opsnapning
                 gennem elektronisk krigsførelse.
               </p>
-              <img src="./Img/fiber_dron.png" alt="fiber" class="" />
+              <img src="./Img/fiber_dron.png" alt="fiber" class="fiber-img" />
               <p class="fiber-subtitle">
                 Begge modeller er udstyret med et fiberoptisk kabel, der giver
                 sikker kommunikation på afstande op til 15 km.
               </p>
             </div>
-            <div class="fib-description">
-              <p class="fiber-desc">fiber-optic</p>
-            </div>
           </div>
         </div>
       </section>
-      
+
       <!-- FPV_FRONER -->
       <section>
-        <div class="container">
-          <div class="">
-            <p>fpv drones</p>
-            <h2>FPV Drones</h2>
-            <p>
+        <div class="fpv-container container">
+          <div class="fpv-content">
+            <p class="fpv-desc">fpv drones</p>
+            <h2 class="fpv-title">FPV Drones</h2>
+            <p class="fpv-text">
               En FPV-drone er et ubemandet luftfartøj, styret i First Person
               View (FPV). I militære sammenhænge henviser det oftest til
               højhastigheds FPV-quadcoptere, ombygget til kamikaze-droner eller
@@ -186,38 +191,57 @@
               at kaste ammunition.
             </p>
           </div>
-          <div class="">
-            <img src="./Img/fpv.png" alt="fpv" />
-            <p>
+          <div class="fpv-highlight">
+            <img src="./Img/fpv.png" alt="fpv" class="fpv-img" />
+            <p class="img-desc">
               FPV-droner er blevet et af de mest udbredte og fleksible værktøjer
               på det moderne slagfelt takket være deres lave pris, enkel
               produktion og høje effektivitet.
             </p>
           </div>
-          <div class="">
-            <h4>Centrale egenskaber ved FPV-droner</h4>
-            <ul>
-              <li>
-                <img src="./icon/lightning.svg" alt="lightning" />
-                <p>
-                  registreret flyvehastighed — op til 150 km/t (april 2024);
-                </p>
-              </li>
-              <li>
-                <img src="./icon/security.svg" alt="security" />
-                <p>
+          <div class="fpv-imfo">
+            <h4 class="list-title">Centrale egenskaber ved FPV-droner</h4>
+            <ul class="fpv-list">
+              <li class="fpv-list-item">
+                <div class="icon-fpv-box">
+                  <img
+                    src="./icon/security.svg"
+                    alt="security"
+                    class="fpv-list-icon"
+                  />
+                </div>
+                <p class="fpv-list-desc">
                   grundkonstruktionen er en kulstofiber-ramme, som giver lethed
                   og styrke
                 </p>
               </li>
-              <li>
-                <img src="./icon/signal.svg" alt="signal" />
-                <p>effektiv rækkevidde: 3–25 km</p>
+              <li class="fpv-list-item">
+                <div class="icon-fpv-box">
+                  <img
+                    src="./icon/signal.svg"
+                    alt="signal"
+                    class="fpv-list-icon"
+                  />
+                </div>
+                <p class="fpv-list-desc">effektiv rækkevidde: 3–25 km</p>
+              </li>
+              <li class="fpv-list-item">
+                <div class="icon-fpv-box">
+                  <img
+                    src="./icon/lightning.svg"
+                    alt="lightning"
+                    class="fpv-list-icon"
+                  />
+                </div>
+                <p class="fpv-list-desc">
+                  registreret flyvehastighed — op til 150 km/t (april 2024);
+                </p>
               </li>
             </ul>
           </div>
         </div>
       </section>
+
       <!-- SPOTLIGHT_SECTION -->
       <section class="spotlight">
         <div class="">
