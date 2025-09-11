@@ -1,24 +1,17 @@
-.mag-container {
+.fpv-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 
-  place-items: center;
-
   padding: 120px 0;
-  height: 100vh;
 }
 
-.mag-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
+.fpv-content {
 }
 
-.mag-desc {
+.fpv-desc {
   align-self: flex-start;
   width: fit-content;
 
@@ -32,39 +25,50 @@
   border-radius: 1.25rem;
 }
 
-.mag-title {
+.fpv-title {
   font-weight: 500;
   font-size: 2rem;
 
   color: var(--title-color);
-
   margin-bottom: 0.88rem;
 }
 
-.mag-text {
+.fpv-text {
   font-weight: 400;
   font-size: 1.12rem;
-
   color: var(--text-color);
-  line-height: 1.6rem;
+  line-height: 1.4;
   letter-spacing: 0.04em;
 
-  width: 27.6rem;
+  width: 28rem;
 }
 
-.mag-images {
+.fpv-highlight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10rem;
 }
 
-.m-img {
-  width: 100%;
-  height: auto;
+.fpv-img {
+  /* margin-bottom: 10rem; */
 }
 
-.mag-info {
-  align-self: flex-start;
+.img-desc {
+  font-weight: 400;
+  font-size: 1rem;
+
+  letter-spacing: 0.04em;
+  color: var(--text-color);
+  line-height: 1.4;
 }
 
-.mag-subtitle {
+.fpv-imfo {
+}
+
+.list-title {
   font-size: 1.6rem;
   font-weight: 500;
   color: var(--title-color);
@@ -72,20 +76,33 @@
   margin-bottom: 1.3rem;
 }
 
-.mag-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: end;
+.fpv-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
 
-  gap: 2rem;
-
-  min-width: 530px;
-  width: 100%;
-  height: auto;
+  /* gap: 2rem; */
 }
 
-.mag-item {
+.fpv-list-item:nth-child(1) {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+/* другий елемент – внизу зліва */
+.fpv-list-item:nth-child(2) {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+/* третій елемент – у правій колонці, але тільки зверху */
+.fpv-list-item:nth-child(3) {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.fpv-list-item {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -100,7 +117,7 @@
   height: 152px;
 }
 
-.card-img {
+.icon-fpv-box {
   display: flex;
   align-items: center;
 
@@ -109,12 +126,12 @@
   border-radius: 50%;
 }
 
-.mag-list-img {
+.fpv-list-icon {
   width: 24px;
   height: 24px;
 }
 
-.mag-list-text {
+.fpv-list-desc {
   font-weight: 400;
   font-size: 1rem;
 
