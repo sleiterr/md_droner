@@ -1,0 +1,27 @@
+/** ========================== */
+/*! ABOUT_SECTION */
+/** ========================== */
+
+.about-section {
+}
+
+.about-container {
+  padding: 160px 0;
+}
+
+.about-content {
+}
+
+.about-text {
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: var(--text-color);
+
+  text-align: center;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  max-width: 80ch; /* Limit text width to ~80 characters per line for readability */
+  margin: 0 auto;
+}
