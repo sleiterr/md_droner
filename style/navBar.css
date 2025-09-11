@@ -1,0 +1,39 @@
+/** ========================== */
+/*! NAV_BAR */
+/** ========================== */
+
+.header {
+  background-color: var(--hero-background);
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 30px 0 30px;
+}
+.logo-box {
+  padding: 25px 0 25px 0;
+}
+.logo {
+  font-weight: 700;
+  color: var(--text-nav-color);
+  font-size: 1.25rem;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1.88rem;
+}
+.nav-item {
+}
+.nav-link {
+  font-family: "Plus Jakarta Sans";
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: var(--text-nav-color);
+}

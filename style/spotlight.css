@@ -1,0 +1,9 @@
+/** ========================== */
+/*! SPOTLIGHT_SECTION */
+/** ========================== */
+
+.spotlight {
+  background: url("../Img/spotlight.jpg");
+  background: cover;
+  height: 100vh;
+}
