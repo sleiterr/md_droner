@@ -3,7 +3,69 @@
 /** ========================== */
 
 .spotlight {
-  background: url("../Img/spotlight.jpg");
-  background: cover;
+  background-image: url("../Img/spotlight.jpg");
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  background-position: center;
   height: 100vh;
+}
+
+.spot-container {
+  width: 50vw;
+  height: 100%;
+  padding: 5.6rem 0;
+
+  background-color: var(--spot-background);
+}
+
+.spot-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  gap: 130px;
+  height: 100%;
+
+  margin-left: 5rem;
+}
+
+.spot-title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--title-color);
+  /* letter-spacing: 0.04em; */
+}
+
+.spot-section {
+  /* align-self: end; */
+}
+
+.spot-text {
+  font-weight: 400;
+  font-size: 1rem;
+
+  color: var(--text-color);
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+
+  max-width: 26rem;
+}
+
+.spot-link i {
+  font-size: 1rem;
+  position: relative;
+  top: 1px;
+}
+
+.spot-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 1.5rem;
+
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: var(--text-color);
 }
