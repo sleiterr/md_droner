@@ -1,16 +1,15 @@
-.fpv-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* контент ліворуч, картинка+список праворуч */
-  gap: 40px;
+.toloka-container {
+  position: relative;
 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
   padding: 120px 0;
 }
 
-.fpv-content {
-}
-
-.fpv-desc {
-  align-self: flex-start;
+.toloka-desc {
+  position: absolute;
   width: fit-content;
 
   font-weight: 600;
@@ -23,7 +22,16 @@
   border-radius: 1.25rem;
 }
 
-.fpv-title {
+.desc {
+}
+
+.tol-content-box {
+}
+
+.toloka-content {
+}
+
+.toloka-titlte {
   font-weight: 500;
   font-size: 2rem;
 
@@ -31,32 +39,21 @@
   margin-bottom: 0.88rem;
 }
 
-.fpv-text {
+.toloka-text {
   font-weight: 400;
   font-size: 1.12rem;
   color: var(--text-color);
   line-height: 1.4;
   letter-spacing: 0.04em;
-
-  width: 28rem;
 }
 
-.fpv-highlight {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  gap: 10rem;
+.interactive-content {
 }
 
-.fpv-img {
-  width: 35rem;
-  height: 17.25rem;
-  /* margin-bottom: 10rem; */
+.toloka-img {
 }
 
-.img-desc {
+.tol-img-desc {
   font-weight: 400;
   font-size: 1rem;
 
@@ -65,10 +62,11 @@
   line-height: 1.4;
 }
 
-.fpv-imfo {
+.list-box {
+  align-self: center;
 }
 
-.list-title {
+.tol-list-title {
   font-size: 1.6rem;
   font-weight: 500;
   color: var(--title-color);
@@ -76,33 +74,19 @@
   margin-bottom: 2rem;
 }
 
-.fpv-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, auto);
+.list-title {
+}
+
+.toloka-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
   gap: 20px;
-
-  max-width: 520px;
 }
 
-.fpv-list-item:nth-child(1) {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-}
-
-/* другий елемент – внизу зліва */
-.fpv-list-item:nth-child(2) {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-}
-
-/* третій елемент – у правій колонці, але тільки зверху */
-.fpv-list-item:nth-child(3) {
-  grid-column: 1 / 3;
-  grid-row: 1 / 2;
-}
-
-.fpv-list-item {
+.toloka-list-items {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -117,7 +101,7 @@
   height: 152px;
 }
 
-.icon-fpv-box {
+.icon-toloka-box {
   display: flex;
   align-items: center;
 
@@ -126,12 +110,12 @@
   border-radius: 50%;
 }
 
-.fpv-list-icon {
+.toloka-icon {
   width: 24px;
   height: 24px;
 }
 
-.fpv-list-desc {
+.toloka-list-desc {
   font-weight: 400;
   font-size: 1rem;
 

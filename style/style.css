@@ -65,6 +65,9 @@ button {
 }
 
 :root {
+  --body-color: #212529;
+  --footer-body: #333333;
+
   --title-color: #fff;
   --text-color: #fff;
   --text-nav-color: #333;
@@ -74,8 +77,8 @@ button {
   --btn-1-color: #fff;
   --btn-hover-color: #5c7cfa;
   --btn-menu-hover: #311f09;
-  --body-color: #212529;
   --hero-background: #fff;
   --hero-caption: rgba(255, 255, 255, 0.2);
   --card-caption: rgba(255, 255, 255, 0.2);
+  --spot-background: rgba(17, 17, 17, 0.6);
 }
