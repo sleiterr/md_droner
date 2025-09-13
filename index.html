@@ -7,6 +7,7 @@
     <meta name="keywords" content="hero section" />
     <meta name="author" content="hero section" />
 
+    <!--* STYLE_CSS -->
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/navBar.css" />
     <link rel="stylesheet" href="./style/hero.css" />
@@ -19,10 +20,18 @@
 
     <link rel="stylesheet" href="./style/spotlight.css" />
 
+    <!--* AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!--* AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--* FONTAWESOME -->
     <script
       src="https://kit.fontawesome.com/53c6f727c2.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/animation.js"></script>
     <title>military drones</title>
   </head>
   <body>
@@ -32,18 +41,23 @@
           <p class="logo">drones</p>
         </div>
         <ul class="nav-list">
-          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Magura</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Fiber-optic</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Fpv</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Toloka</a></li>
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item">
+            <a href="#magura" class="nav-link">Magura</a>
+          </li>
+          <li class="nav-item">
+            <a href="#fiber" class="nav-link">Fiber-optic</a>
+          </li>
+          <li class="nav-item"><a href="#fpv" class="nav-link">Fpv</a></li>
+          <li class="nav-item"><a href="#spot" class="nav-link">Toloka</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
       <!-- HERO-SECTION -->
-      <section class="hero-section">
+      <section class="hero-section" id="home">
         <div class="hero-conteiner">
           <div class="hero-content">
             <div class="hero-desc">
@@ -51,7 +65,7 @@
               <h1 class="hero-title">
                 Revolutionerende tilgang til militære droner
               </h1>
-              <bottom class="hero-btn">Læs mere</bottom>
+              <a class="hero-btn">Læs mere</a>
             </div>
           </div>
           <div class="hero-img-conteiner">
@@ -61,7 +75,7 @@
       </section>
 
       <!-- ABOUT -->
-      <section class="about-section">
+      <section class="about-section" id="about">
         <div class="about-container container">
           <div class="about-content">
             <p class="about-text">
@@ -85,7 +99,7 @@
       </section>
 
       <!-- MAGURA -->
-      <section>
+      <section class="magura-section" id="magura">
         <div class="mag-container container">
           <div class="mag-content">
             <p class="mag-desc">martime drone</p>
@@ -98,7 +112,14 @@
               </p>
             </div>
           </div>
-          <div class="mag-images">
+          <div
+            class="mag-images"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="100"
+            data-aos-duration="900"
+            data-aos-offset="0"
+          >
             <img src="./Img/magura.png" alt="magura" class="m-img" />
           </div>
           <div class="mag-info">
@@ -139,7 +160,7 @@
       </section>
 
       <!-- FIBER_FRONE -->
-      <section>
+      <section id="fiber">
         <div class="fiber-container container">
           <div class="card-fiber">
             <h4 class="card-title">Centrale platforme fra TechEx:</h4>
@@ -169,7 +190,16 @@
                 gør dem praktisk talt immune over for jamming eller opsnapning
                 gennem elektronisk krigsførelse.
               </p>
-              <img src="./Img/fiber_dron.png" alt="fiber" class="fiber-img" />
+              <img
+                src="./Img/fiber_dron.png"
+                alt="fiber"
+                class="fiber-img"
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="100"
+                data-aos-duration="800"
+                data-aos-offset="0"
+              />
               <p class="fiber-subtitle">
                 Begge modeller er udstyret med et fiberoptisk kabel, der giver
                 sikker kommunikation på afstande op til 15 km.
@@ -180,7 +210,7 @@
       </section>
 
       <!-- FPV_FRONER -->
-      <section>
+      <section id="fpv">
         <div class="fpv-container container">
           <div class="fpv-content">
             <p class="fpv-desc">fpv drones</p>
@@ -194,7 +224,16 @@
             </p>
           </div>
           <div class="fpv-highlight">
-            <img src="./Img/fpv.png" alt="fpv" class="fpv-img" />
+            <img
+              src="./Img/fpv.png"
+              alt="fpv"
+              class="fpv-img"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="100"
+              data-aos-duration="900"
+              data-aos-offset="0"
+            />
             <p class="img-desc">
               FPV-droner er blevet et af de mest udbredte og fleksible værktøjer
               på det moderne slagfelt takket være deres lave pris, enkel
@@ -245,7 +284,7 @@
       </section>
 
       <!-- SPOTLIGHT_SECTION -->
-      <section class="spotlight">
+      <section class="spotlight" id="spot">
         <div class="spot-container">
           <div class="spot-content">
             <h2 class="spot-title">
@@ -266,7 +305,7 @@
       </section>
 
       <!-- TOLOKA_SECTION -->
-      <section>
+      <section id="toloka">
         <div class="toloka-container container">
           <div class="toloka-desc">
             <p class="desc">undervandsdroner</p>
@@ -283,7 +322,16 @@
               </p>
             </div>
             <div class="interactive-content">
-              <img src="./Img/toloka.png" alt="" class="toloka-img" />
+              <img
+                src="./Img/toloka.png"
+                alt=""
+                class="toloka-img"
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="100"
+                data-aos-duration="900"
+                data-aos-offset="0"
+              />
               <p class="tol-img-desc">
                 FPV-droner er blevet et af de mest udbredte og fleksible
                 værktøjer på det moderne slagfelt takket være deres lave pris,
@@ -343,4 +391,7 @@
       </div>
     </footer>
   </body>
+  <script>
+    AOS.init();
+  </script>
 </html>

@@ -12,9 +12,22 @@
 
   padding: 0 30px 0 30px;
 }
+
+.logo-box::before {
+  content: "";
+  position: absolute;
+  top: 15%;
+  right: -22px;
+  height: 70%;
+  width: 1px;
+  background-color: #333;
+}
+
 .logo-box {
+  position: relative;
   padding: 25px 0 25px 0;
 }
+
 .logo {
   font-weight: 700;
   color: var(--text-nav-color);
@@ -29,11 +42,35 @@
 
   gap: 1.88rem;
 }
+
 .nav-item {
 }
+
 .nav-link {
+  position: relative;
+
   font-family: "Plus Jakarta Sans";
   font-weight: 400;
   font-size: 1.25rem;
   color: var(--text-nav-color);
+}
+
+.nav-link:hover {
+  transition: 0.3s;
+  color: #5c7cfa;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  background-color: #5c7cfa;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -4px;
+  transition: 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
 }
