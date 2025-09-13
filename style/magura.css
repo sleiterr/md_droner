@@ -1,25 +1,28 @@
+.magura-section {
+  position: relative;
+}
+
 .mag-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
 
   place-items: center;
 
   padding: 120px 0;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .mag-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: end;
   height: 100%;
 }
 
 .mag-desc {
-  align-self: flex-start;
+  position: absolute;
+  top: 0;
   width: fit-content;
 
   font-weight: 600;
@@ -31,6 +34,10 @@
   background-color: var(--hero-caption);
   border-radius: 1.25rem;
 }
+
+/* .mag-desc.animate {
+  animation: text-focus-in 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+} */
 
 .mag-title {
   font-weight: 500;
@@ -52,16 +59,30 @@
   width: 27.6rem;
 }
 
+/* .mag-title.animate,
+.mag-text.animate {
+  animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+} */
+
 .mag-images {
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.6s ease-out;
+}
+
+.m-img.animate {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .m-img {
-  width: 100%;
-  height: auto;
+  width: 640px;
+  height: 330px;
+
+  object-fit: cover;
 }
 
 .mag-info {
-  align-self: flex-start;
+  grid-area: 2 / 2 / 3 / 2;
 }
 
 .mag-subtitle {
@@ -69,14 +90,14 @@
   font-weight: 500;
   color: var(--title-color);
 
-  margin-bottom: 1.3rem;
+  margin-bottom: 32px;
 }
 
 .mag-list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: end;
+  justify-content: start;
 
   gap: 2rem;
 
@@ -118,6 +139,7 @@
   font-weight: 400;
   font-size: 1rem;
 
-  letter-spacing: 0.04rem;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
   color: var(--text-color);
 }

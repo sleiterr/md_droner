@@ -17,11 +17,16 @@
   font-size: 1.25rem;
   color: var(--text-color);
 
+  opacity: 0;
   text-align: center;
   line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  max-width: 80ch; /* Limit text width to ~80 characters per line for readability */
+  max-width: 80ch; /* Limit text width to ~80ch characters per line for readability */
   margin: 0 auto;
+}
+
+.about-text.animate {
+  animation: text-focus-in 0.6s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
