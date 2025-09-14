@@ -59,8 +59,13 @@
   top: 1px;
 }
 
+.spot-link:hover {
+  transition: 0.3s;
+  color: #5c7cfa;
+}
+
 .spot-link {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 8px;
   margin-top: 1.5rem;

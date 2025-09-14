@@ -9,16 +9,6 @@
 
     <!--* STYLE_CSS -->
     <link rel="stylesheet" href="./style/style.css" />
-    <link rel="stylesheet" href="./style/navBar.css" />
-    <link rel="stylesheet" href="./style/hero.css" />
-    <link rel="stylesheet" href="./style/about.css" />
-    <link rel="stylesheet" href="./style/magura.css" />
-    <link rel="stylesheet" href="./style/fiber.css" />
-    <link rel="stylesheet" href="./style/fpv.css" />
-    <link rel="stylesheet" href="./style/toloka.css" />
-    <link rel="stylesheet" href="./style/footer.css" />
-
-    <link rel="stylesheet" href="./style/spotlight.css" />
 
     <!--* AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -31,15 +21,25 @@
       src="https://kit.fontawesome.com/53c6f727c2.js"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/animation.js"></script>
+
+    <!--* JS_SCRIPT -->
+    <script type="module" src="./js/main.js"></script>
+
     <title>military drones</title>
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
+      <nav class="nav-bar">
         <div class="logo-box">
           <p class="logo">drones</p>
         </div>
+
+        <div class="burger-btn">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+
         <ul class="nav-list">
           <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
           <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
@@ -117,7 +117,7 @@
             data-aos="fade-zoom-in"
             data-aos-easing="ease-in-back"
             data-aos-delay="100"
-            data-aos-duration="900"
+            data-aos-duration="600"
             data-aos-offset="0"
           >
             <img src="./Img/magura.png" alt="magura" class="m-img" />
@@ -183,6 +183,7 @@
             <div class="fib-description">
               <p class="fiber-desc">fiber-optic</p>
             </div>
+
             <div class="fiber-content">
               <h2 class="fiber-title">Fiber-Optic Controlled Drones</h2>
               <p class="fiber-text">
@@ -197,7 +198,7 @@
                 data-aos="fade-zoom-in"
                 data-aos-easing="ease-in-back"
                 data-aos-delay="100"
-                data-aos-duration="800"
+                data-aos-duration="600"
                 data-aos-offset="0"
               />
               <p class="fiber-subtitle">
@@ -210,7 +211,7 @@
       </section>
 
       <!-- FPV_FRONER -->
-      <section id="fpv">
+      <section class="fpv-section" id="fpv">
         <div class="fpv-container container">
           <div class="fpv-content">
             <p class="fpv-desc">fpv drones</p>
@@ -231,7 +232,7 @@
               data-aos="fade-zoom-in"
               data-aos-easing="ease-in-back"
               data-aos-delay="100"
-              data-aos-duration="900"
+              data-aos-duration="600"
               data-aos-offset="0"
             />
             <p class="img-desc">
@@ -329,7 +330,7 @@
                 data-aos="fade-zoom-in"
                 data-aos-easing="ease-in-back"
                 data-aos-delay="100"
-                data-aos-duration="900"
+                data-aos-duration="600"
                 data-aos-offset="0"
               />
               <p class="tol-img-desc">
@@ -390,8 +391,9 @@
         </div>
       </div>
     </footer>
+    <script>
+      <!--* JS_SCRIPT -->
+      AOS.init();
+    </script>
   </body>
-  <script>
-    AOS.init();
-  </script>
 </html>
