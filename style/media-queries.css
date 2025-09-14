@@ -83,6 +83,10 @@
     display: none;
   }
 
+  .hero-content {
+    max-width: 424px;
+  }
+
   .hero-desc {
     margin-left: 10px;
   }
@@ -119,5 +123,184 @@
 
     max-width: 420px; /* Limit text width to ~80ch characters per line for readability */
     margin: 0 auto;
+  }
+
+  /** =================================== */
+  /*! MAGURA-SECTION */
+  /** =================================== */
+
+  .mag-desc {
+    font-size: 1.37rem;
+    letter-spacing: 0.04em;
+
+    padding: 6px 16px;
+  }
+
+  .mag-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    place-items: start;
+    padding: 60px 10px;
+  }
+
+  .mag-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+  }
+
+  .mag-title {
+    font-weight: 500;
+    font-size: 1.62rem;
+
+    margin-bottom: 12px;
+  }
+
+  .mag-text {
+    font-size: 1rem;
+
+    line-height: 1.4em;
+    letter-spacing: 0.06em;
+
+    max-width: 390px;
+  }
+
+  .m-img {
+    width: 390px;
+    height: auto;
+
+    object-fit: contain;
+  }
+
+  .mag-info {
+    grid-area: auto;
+  }
+
+  .mag-subtitle {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--title-color);
+
+    margin-bottom: 28px;
+  }
+
+  .mag-item {
+    padding: 18px 14px;
+    width: 250px;
+    height: 152px;
+  }
+
+  .mag-list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+    gap: 20px;
+
+    min-width: 420px;
+    width: 100%;
+    height: auto;
+  }
+
+  /** =================================== */
+  /*! FIBER-SECTION */
+  /** =================================== */
+
+  .fiber-container {
+    position: relative;
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+
+    gap: 40px;
+
+    padding: 60px 10px;
+  }
+
+  .fiber-desc {
+    align-self: flex-start;
+    width: fit-content;
+
+    font-size: 1.37rem;
+    letter-spacing: 0.04em;
+
+    padding: 6px 16px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+
+    margin-bottom: 12px;
+  }
+
+  .fiber-text {
+    font-size: 1rem;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+
+    margin-bottom: 22px;
+    max-width: 420px;
+    width: 100%;
+  }
+
+  .fiber-img {
+    width: 500px;
+    height: 392px;
+
+    object-fit: contain;
+    padding-bottom: 22px;
+  }
+
+  .fiber-subtitle {
+    font-size: 1rem;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-align: center;
+
+    max-width: 420px;
+    width: 100%;
+  }
+
+  .card-fiber {
+    align-self: start;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+    letter-spacing: 0.04em;
+    color: var(--text-color);
+
+    margin-bottom: 22px;
+  }
+
+  .fiber-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 22px;
+
+    min-width: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .fiber-list-item {
+    padding: 18px 14px;
+    width: 220px;
+    height: 160px;
+  }
+
+  .list-text {
+    font-size: 1rem;
+
+    letter-spacing: 0.04em;
+    line-height: normal;
   }
 }

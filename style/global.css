@@ -12,6 +12,10 @@ body {
   background-color: var(--body-color);
 }
 
+/* body * {
+  outline: 1px solid red;
+} */
+
 @keyframes text-focus-in {
   0% {
     filter: blur(12px);

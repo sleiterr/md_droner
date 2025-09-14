@@ -32,7 +32,7 @@
 
   padding: 6px 16px;
   background-color: var(--hero-caption);
-  border-radius: 1.25rem;
+  border-radius: 20px;
 }
 
 /* .mag-desc.animate {
@@ -45,7 +45,7 @@
 
   color: var(--title-color);
 
-  margin-bottom: 0.88rem;
+  margin-bottom: 14px;
 }
 
 .mag-text {
@@ -53,10 +53,10 @@
   font-size: 1.12rem;
 
   color: var(--text-color);
-  line-height: 1.6rem;
+  line-height: 1.6em;
   letter-spacing: 0.04em;
 
-  width: 27.6rem;
+  width: 440px;
 }
 
 /* .mag-title.animate,
@@ -99,7 +99,7 @@
   align-items: center;
   justify-content: start;
 
-  gap: 2rem;
+  gap: 32px;
 
   min-width: 530px;
   width: 100%;
