@@ -31,7 +31,7 @@
   align-items: center;
   justify-content: start;
 
-  gap: 2rem;
+  gap: 32px;
 
   min-width: 530px;
   width: 100%;
@@ -89,6 +89,7 @@
   width: 60px;
   height: 60px;
 }
+
 .list-text {
   font-weight: 400;
   font-size: 1rem;
@@ -103,7 +104,7 @@
   height: 392px;
 
   object-fit: contain;
-  padding-bottom: 3.75rem;
+  margin-bottom: 32px;
 }
 
 .content {
@@ -118,7 +119,7 @@
 
   color: var(--title-color);
 
-  margin-bottom: 0.88rem;
+  margin-bottom: 14px;
 }
 
 .fiber-text {
@@ -128,21 +129,23 @@
   line-height: 1.4;
   letter-spacing: 0.04em;
 
-  margin-bottom: 3.75rem;
-  max-width: 39rem;
+  margin-bottom: 32px;
+  max-width: 624px;
   width: 100%;
 }
+
 .fiber-subtitle {
   font-weight: 400;
   font-size: 1.12rem;
   color: var(--text-color);
   line-height: 1.4;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
   text-align: center;
 
-  max-width: 32rem;
+  max-width: 512px;
   width: 100%;
 }
+
 .fib-description {
   position: absolute;
 
@@ -161,5 +164,5 @@
 
   padding: 6px 16px;
   background-color: var(--hero-caption);
-  border-radius: 1.25rem;
+  border-radius: 20px;
 }
