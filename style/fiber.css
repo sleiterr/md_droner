@@ -9,8 +9,10 @@
 
 .fiber-container {
 }
+
 .container {
 }
+
 .card-fiber {
   align-self: center;
 }
@@ -37,6 +39,7 @@
 }
 
 .fiber-list-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -44,11 +47,33 @@
 
   gap: 14px;
 
-  border: 1px solid #fff;
+  clip-path: polygon(
+    0 0,
+    20% 0,
+    20% 5%,
+    80% 5%,
+    80% 0,
+    100% 0,
+    100% 100%,
+    80% 100%,
+    80% 95%,
+    20% 95%,
+    20% 100%,
+    0 100%
+  );
 
-  padding: 0 20px;
-  width: 190px;
+  padding: 22px 20px;
+  width: 220px;
   height: 160px;
+}
+
+.fiber-list-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  clip-path: inherit;
+  border: 1px solid #fff;
+  pointer-events: none;
 }
 
 .fiber-card-img {
@@ -77,6 +102,7 @@
   width: 500px;
   height: 392px;
 
+  object-fit: contain;
   padding-bottom: 3.75rem;
 }
 
@@ -131,9 +157,9 @@
   font-weight: 600;
   color: var(--span-color);
   font-size: 1.5rem;
-  letter-spacing: 0.06rem;
+  letter-spacing: 0.04em;
 
-  padding: 0.5rem 1rem;
+  padding: 6px 16px;
   background-color: var(--hero-caption);
   border-radius: 1.25rem;
 }

@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+export function animation() {
   const animatedText = document.querySelectorAll(".about-text");
 
   const observer = new IntersectionObserver(
@@ -14,6 +14,5 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
   animatedText.forEach((el) => observer.observe(el));
-});
-
-console.log("animate added");
+  console.log("animate added");
+}

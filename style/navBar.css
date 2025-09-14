@@ -5,11 +5,18 @@
 .header {
   background-color: var(--hero-background);
 }
-.nav {
+
+.burger-btn {
+  display: none;
+}
+
+.nav-bar {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
+  z-index: 1;
   padding: 0 30px 0 30px;
 }
 

@@ -23,7 +23,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  max-width: 80ch; /* Limit text width to ~80ch characters per line for readability */
+  max-width: 1120px; /* Limit text width to ~80ch characters per line for readability */
   margin: 0 auto;
 }
 
