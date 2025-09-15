@@ -84,3 +84,38 @@
     letter-spacing: 0.04em;
   }
 }
+
+@media (min-width: 425px) and (max-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 28px;
+
+    padding: 30px 40px;
+  }
+
+  .footer-logo-box {
+    padding: 24px 0;
+  }
+
+  .footer-logo {
+    font-size: 2.62rem;
+
+    text-transform: uppercase;
+  }
+
+  .copyright-box::before {
+    width: 100%;
+    min-width: 360px;
+    max-width: 500px;
+  }
+
+  .copyright {
+    gap: 6px;
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+  }
+}
