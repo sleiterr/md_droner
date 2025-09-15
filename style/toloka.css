@@ -44,7 +44,7 @@
   font-size: 2rem;
 
   color: var(--title-color);
-  margin-bottom: 0.88rem;
+  margin-bottom: 14px;
 }
 
 .toloka-text {
@@ -92,9 +92,6 @@
   color: var(--title-color);
 
   margin-bottom: 42px;
-}
-
-.list-title {
 }
 
 .toloka-list {
@@ -165,4 +162,105 @@
   letter-spacing: 0.04em;
   line-height: 1.2;
   color: var(--text-color);
+}
+
+/*? MEDIA-SCREEN  */
+
+@media screen and (max-width: 424px) {
+  .toloka-container {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+
+    padding: 60px 10px;
+  }
+
+  .toloka-desc {
+    position: absolute;
+    width: fit-content;
+
+    top: 0;
+    right: 0;
+    padding: 6px 16px;
+    letter-spacing: 0.04em;
+
+    background-color: var(--hero-caption);
+    border-radius: 20px;
+  }
+
+  .desc {
+    font-weight: 500;
+    font-size: 1.37rem;
+    letter-spacing: 0.04em;
+  }
+
+  .toloka-titlte {
+    font-weight: 500;
+    font-size: 1.5rem;
+
+    color: var(--title-color);
+    margin-bottom: 12px;
+  }
+
+  .toloka-text {
+    font-weight: 400;
+    font-size: 1rem;
+
+    letter-spacing: 0.04em;
+    width: 100%;
+  }
+
+  .toloka-img {
+    width: 500px;
+    height: 390px;
+
+    object-fit: contain;
+  }
+
+  .tol-img-desc {
+    font-weight: 400;
+    font-size: 1rem;
+
+    letter-spacing: 0.04em;
+    line-height: 1.4;
+    text-align: center;
+
+    margin-top: 0;
+  }
+
+  .tol-list-title {
+    font-weight: 300;
+    font-size: 1.3rem;
+
+    text-align: left;
+    letter-spacing: 0.04em;
+
+    margin-bottom: 22px;
+  }
+
+  .toloka-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: start;
+
+    gap: 14px;
+  }
+
+  .toloka-list-items {
+    padding: 18px 14px;
+    width: 220px;
+    height: 160px;
+  }
+
+  .toloka-list-desc {
+    font-size: 1rem;
+
+    letter-spacing: 0.04em;
+    line-height: 1.2;
+    line-height: normal;
+  }
 }
