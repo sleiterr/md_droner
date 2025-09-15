@@ -74,3 +74,11 @@
   font-size: 1.3rem;
   color: var(--text-color);
 }
+
+/*? MEDIA-SCREEN  */
+
+@media screen and (max-width: 424px) {
+  .spotlight {
+    display: none;
+  }
+}

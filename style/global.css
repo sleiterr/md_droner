@@ -12,9 +12,9 @@ body {
   background-color: var(--body-color);
 }
 
-/* body * {
+body * {
   outline: 1px solid red;
-} */
+}
 
 @keyframes text-focus-in {
   0% {

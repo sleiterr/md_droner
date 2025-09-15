@@ -168,3 +168,84 @@
   line-height: 1.2;
   color: var(--text-color);
 }
+
+/*? MAGURA */
+
+@media screen and (max-width: 424px) {
+  .mag-desc {
+    font-size: 1.37rem;
+    letter-spacing: 0.04em;
+
+    padding: 6px 16px;
+  }
+
+  .mag-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    place-items: start;
+    padding: 60px 10px;
+  }
+
+  .mag-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+  }
+
+  .mag-title {
+    font-weight: 500;
+    font-size: 1.5rem;
+
+    margin-bottom: 12px;
+  }
+
+  .mag-text {
+    font-size: 1rem;
+
+    line-height: 1.4em;
+    letter-spacing: 0.06em;
+
+    max-width: 390px;
+  }
+
+  .m-img {
+    width: 390px;
+    height: auto;
+
+    object-fit: contain;
+  }
+
+  .mag-info {
+    grid-area: auto;
+    max-width: 390px;
+  }
+
+  .mag-subtitle {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--title-color);
+
+    margin-bottom: 28px;
+  }
+
+  .mag-item {
+    padding: 18px 14px;
+    width: 250px;
+    height: 152px;
+  }
+
+  .mag-list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+    gap: 20px;
+
+    min-width: 390px;
+    width: 100%;
+    height: auto;
+  }
+}

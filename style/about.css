@@ -30,3 +30,24 @@
 .about-text.animate {
   animation: text-focus-in 0.6s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
+
+/*? MEDIA-SCREEN  */
+
+@media screen and (max-width: 424px) {
+  .about-container {
+    padding: 120px 10px;
+  }
+
+  .about-text {
+    font-weight: 400;
+    font-size: 1rem;
+
+    text-align: left;
+    line-height: 1.6;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    max-width: 420px; /* Limit text width to ~80ch characters per line for readability */
+    margin: 0 auto;
+  }
+}
