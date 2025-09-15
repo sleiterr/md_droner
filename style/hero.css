@@ -15,6 +15,7 @@
 
   height: 100vh;
 }
+
 .hero-content {
   display: flex;
   flex-direction: column;
@@ -118,12 +119,23 @@
 /*? MEDIA-SCREEN  */
 
 @media screen and (max-width: 424px) {
+  
+  .hero-conteiner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    height: 100vh;
+  }
+
   .hero-img-conteiner {
     display: none;
   }
 
   .hero-content {
-    max-width: 424px;
+    width: 100%;
   }
 
   .hero-desc {
