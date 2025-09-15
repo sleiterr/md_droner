@@ -34,7 +34,7 @@
   font-size: 2rem;
 
   color: var(--title-color);
-  margin-bottom: 0.88rem;
+  margin-bottom: 14px;
 }
 
 .fpv-text {
@@ -53,7 +53,7 @@
   align-items: center;
   justify-content: center;
 
-  gap: 10rem;
+  gap: 160px;
 }
 
 .fpv-img {
@@ -170,4 +170,94 @@
   line-height: 1.2;
   color: var(--text-color);
   width: 100%;
+}
+
+/*? MEDIA-SCREEN  */
+
+@media screen and (max-width: 424px) {
+  .fpv-container {
+    grid-template-columns: 1fr; /* контент ліворуч, картинка+список праворуч */
+    gap: 20px;
+
+    padding: 60px 10px;
+  }
+
+  .fpv-desc {
+    font-size: 1.37rem;
+    letter-spacing: 0.04em;
+
+    padding: 6px 16px;
+  }
+
+  .fpv-title {
+    /* font-weight: 300; */
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+  }
+
+  .fpv-text {
+    font-size: 1rem;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+
+    width: 100%;
+  }
+
+  .fpv-highlight {
+    gap: 22px;
+  }
+
+  .fpv-img {
+    width: 500px;
+    height: 392px;
+
+    object-fit: contain;
+  }
+
+  .img-desc {
+    font-size: 1rem;
+    letter-spacing: 0.06em;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .fpv-imfo {
+    width: 390px;
+  }
+
+  .list-title {
+    font-weight: 300;
+    font-size: 1.3rem;
+    letter-spacing: 0.04em;
+
+    margin-bottom: 22px;
+  }
+
+  .fpv-list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 14px;
+
+    max-width: none;
+  }
+
+  .fiber-list-item {
+    padding: 18px 14px;
+    width: 220px;
+    height: 160px;
+  }
+
+  .fpv-list-item {
+    padding: 18px 14px;
+    width: 220px;
+    height: 160px;
+  }
+
+  .fpv-list-desc {
+    font-size: 1rem;
+
+    letter-spacing: 0.04em;
+    line-height: normal;
+  }
 }

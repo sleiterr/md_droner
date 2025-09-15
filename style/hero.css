@@ -114,3 +114,33 @@
   height: 485px;
   aspect-ratio: 98/51;
 }
+
+/*? MEDIA-SCREEN  */
+
+@media screen and (max-width: 424px) {
+  .hero-img-conteiner {
+    display: none;
+  }
+
+  .hero-content {
+    max-width: 424px;
+  }
+
+  .hero-desc {
+    margin-left: 10px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+
+    margin-bottom: 48px;
+  }
+
+  .hero-btn {
+    font-weight: 400;
+    font-size: 1rem;
+
+    border-radius: 25px;
+    padding: 14px 56px;
+  }
+}
