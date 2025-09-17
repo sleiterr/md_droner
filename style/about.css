@@ -10,6 +10,16 @@
 }
 
 .about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.about-text:last-child {
+  margin-bottom: 0;
 }
 
 .about-text {
@@ -17,14 +27,12 @@
   font-size: 1.25rem;
   color: var(--text-color);
 
-  opacity: 0;
   text-align: center;
   line-height: 1.4;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  max-width: 1120px; /* Limit text width to ~80ch characters per line for readability */
-  margin: 0 auto;
+  margin-bottom: 1.5rem; /* 1.5rem = 24px приблизно */
 }
 
 .about-text.animate {
