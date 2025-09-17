@@ -2,10 +2,6 @@
 /*! NAV_BAR */
 /** ========================== */
 
-.header {
-  background-color: var(--hero-background);
-}
-
 .burger-btn {
   display: none;
 }
@@ -85,6 +81,10 @@
 
 /*! STIKY-NAV_BAR  */
 
+.header {
+  background-color: var(--hero-background);
+}
+
 .sticky .header {
   position: fixed;
   top: 0;
@@ -93,11 +93,20 @@
   height: 75px;
   padding-top: 0;
   padding-bottom: 0;
-  /* background-color: rgba(255, 255, 255, 0.8); */
   background-color: var(--hero-background);
+
   z-index: 666;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.4);
+
+  /* opacity: 1;
+  transform: translateY(0%);
+  transition: all 0.4s ease; */
 }
+
+/* .sticky .header.visible {
+  opacity: 0;
+  transform: translateY(0);
+} */
 
 /*? MEDIA-SCREEN  */
 
