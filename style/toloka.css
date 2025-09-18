@@ -174,7 +174,7 @@
     grid-template-columns: 1fr;
     row-gap: 32px;
 
-    padding: 60px 10px;
+    padding: 90px 10px;
   }
 
   .toloka-desc {
@@ -198,15 +198,18 @@
 
   .toloka-titlte {
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 2rem;
 
     color: var(--title-color);
     margin-bottom: 12px;
+
+    max-width: 320px;
+    width: 100%;
   }
 
   .toloka-text {
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.13rem;
 
     letter-spacing: 0.04em;
     width: 100%;
@@ -221,7 +224,7 @@
 
   .tol-img-desc {
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.13rem;
 
     letter-spacing: 0.04em;
     line-height: 1.4;
@@ -230,14 +233,23 @@
     margin-top: 0;
   }
 
+  .list-box {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+
   .tol-list-title {
     font-weight: 300;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 
     text-align: left;
     letter-spacing: 0.04em;
 
-    margin-bottom: 22px;
+    margin-bottom: 32px;
+    max-width: 320px;
+    width: 100%;
   }
 
   .toloka-list {
@@ -247,20 +259,19 @@
     align-items: center;
     justify-content: start;
 
-    gap: 14px;
+    gap: 26px;
   }
 
   .toloka-list-items {
     padding: 18px 14px;
-    width: 220px;
-    height: 160px;
+    width: 250px;
+    height: 152px;
   }
 
   .toloka-list-desc {
     font-size: 1rem;
 
     letter-spacing: 0.04em;
-    line-height: 1.2;
     line-height: normal;
   }
 }
