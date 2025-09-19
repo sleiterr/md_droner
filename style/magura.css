@@ -160,6 +160,15 @@
   height: 24px;
 }
 
+.mag-list-text {
+  font-weight: 400;
+  font-size: 1rem;
+
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  color: var(--text-color);
+}
+
 /*? MAGURA */
 
 @media screen and (max-width: 424px) {
