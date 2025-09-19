@@ -13,7 +13,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
-  gap: 40px;
+  gap: 32px;
   /* max-width: 1120px; */
   margin: 0 auto;
 }
@@ -24,7 +24,7 @@
 
 .about-title {
   font-weight: 600;
-  font-size: 3.25rem;
+  font-size: 2rem;
   color: var(--text-color);
   letter-spacing: 0.04em;
   text-align: right;
@@ -51,12 +51,12 @@
 
 @media screen and (max-width: 424px) {
   .about-container {
-    padding: 60px 10px;
+    padding: 90px 10px;
   }
 
   .about-content {
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 0;
     /* max-width: 1120px; */
     margin: 0 auto;
   }
@@ -67,13 +67,15 @@
   }
 
   .about-title {
-    font-size: 3.25rem;
+    font-size: 2.5rem;
     text-align: center;
+
+    margin-bottom: 22px;
   }
 
   .about-text {
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.13rem;
 
     text-align: left;
     line-height: 1.6;
